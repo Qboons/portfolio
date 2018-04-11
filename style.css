@@ -1,0 +1,44 @@
+
+
+header{
+    padding-top: 100px;
+}
+
+.section{
+    min-height: 1000px;
+    overflow: hidden;
+    position: 'relativ';
+    padding: 80px 10px 0px;
+}
+.section:nth-child(even){
+    background-color: #ccc;
+}
+#aboutMe p{
+    padding: 10px;
+
+}
+#home{
+    background: url(http://lorempixel.com/output/abstract-q-g-1920-1075-4.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#home div{
+    padding: 10px;
+    background-color: rgba(206, 148, 94, 0.61);
+}
+#projects .col-sm-6 p{
+    line-height: 50px;
+}
+li :hover {
+    border-bottom: 2px solid rgb(91, 138, 82);
+    
+}
+
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+
