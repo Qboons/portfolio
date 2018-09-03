@@ -8,50 +8,59 @@
     <title>Portfolio</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        
     
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#top-navbar">
-                <i class="fa fa-bars" aria-hidden="true"></i>  
-            </button>
-            <span class="navbar-brand">JK</span>
-          </div>
-          <div class="collapse navbar-collapse" id="top-navbar">
-            <ul class="nav navbar-nav navbar-right">
-
-              <li><a href="#aboutMe">O MNIE</a></li>
-              <li><a href="#work">DOŚWIADCZENIE</a></li>
-              <li><a href="#school">WYKSZTAŁCENIE</a></li>
-              <li><a href="#skills">UMIEJĘTNOŚCI</a></li>
-              <li><a href="#projects">PROJEKTY</a></li>
-              <li><a href="#contact">KONTAKT</a></li>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar  navbar-dark fixed-top" id="navigation-bar">
+          <a class="navbar-brand" href="#">JK</a>
+          <div class="navbar navbar-expand-lg justify-content-end">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">START</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutMe" data-toggle="collapse" data-target=".navbar-collapse.show">O MNIE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work" data-toggle="collapse" data-target=".navbar-collapse.show">DOŚWIADCZENIE I WYKSZTAŁCENIE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skillsAttr" data-toggle="collapse" data-target=".navbar-collapse.show">UMIEJĘTNOŚCI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-toggle="collapse" data-target=".navbar-collapse.show">PROJEKTY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">KONTAKT</a></li>
+                  </ul>
+                </div>
     </nav>
     <header >
-      <div class="container">
-         
-              
+      <div class="jumbotron d-flex align-items-center" id="home">
+        <div class="container">
+          <h1 class="display-4">JAKUB KOZIEŁ</h1>
+          <p class="lead">PORTFOLIO WZGLEDNIE MŁODEGO ENTUZJASTY PROGRAMOWANIA</p>
         </div>
+      </div>
     </header>
     <section id="aboutMe" class="section">
       <div class="container">       
-          <div class="row about-card">
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                  <img class="img-responsive img-header" src="self.jpg" alt="">
+          <div class="row " id="about-card">
+              <div class="col-sm-12  col-lg-4 img-header">
+                
+                  <img class="img-fluid" id="img-self" src="self.jpg" alt="">
+                  <div class="text-left caption">
+                    <p>IMIE: JAKUB</p>
+                    <p>NAZWISKO: KOZIEŁ</p>
+                    <p>ROK URODZENIA: 1991</p>
+                  </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-8">
+                <div class="col-sm-12  col-lg-8">
                    <p>
                     JESTEM STUDENTEM PAŃSTWOWEJ WYŻSZEJ SZKOŁY ZAWODOWEJ W OŚWIĘCIMIU  NA KIERUNKU INFORMATYKA. INTERESUJĘ SIĘ PROGRAMOWANIEM, A SWOJĄ NAUKĘ ZACZĄŁEM OD JĘZYKA C/C++ JEDNAK  AKTUALNIE SKUPIAM SIĘ NA POSZERZANIU SWOICH UMIEJĘTNOŚCI W JĘZYKU JAVA, W KTÓRYM ZREALIZOWAŁEM PROJEKT SYSTEMU ZARZĄDZANIA ZASOBAMI LUDZKIMI W DWÓCH WERSJACH – PRZY UŻYCIU SERWLETÓW ORAZ FRAMEWORKU SPRING(+HIBERNATE). STARAM SIĘ RÓWNIEŻ ROZWIJAĆ W TECHNOLOGIACH WEBOWYCH (HTML, CSS, JS - REACT). INTERESUJĘ SIĘ TAKŻE OD NIEDAWNA PROJEKTOWANIEM APLIKACJI MOBILNYCH ANDROID. POSIADAM RÓWNIEŻ DOŚWIADCZENIE W PRACY Z TAKIMI NARZĘDZIAMI, JAK GIT, MAVEN ORAZ ZAJMOWAŁEM SIĘ PROJEKTOWANIEM RELACYJNYCH BAZ DANYCH (ORACLE). 
                   </p>
@@ -66,11 +75,11 @@
     <section id="work" class="section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-6 " id="experience-card">
             <h2>DOŚWIADCZENIE ZAWODOWE</h2>
-            <div class="col-lg-12 experience">
+            <div class="col-lg-12">
               <p> 
-                 <h4>08.2017 - 02.2018 INFORMATYK - PEC SP. Z 0.0. OŚWIĘCIM</h4>
+                 <h5>08.2017 - 02.2018 INFORMATYK - PEC SP. Z 0.0. OŚWIĘCIM</h5>
                   <ul>
                     <li>AKTUALIZOWANIE I UTRZYMYWANIE STRONY INTERNETOWEJ ZAKŁADU</li> 
                     <li>ROZWIĄZYWANIE PROBLEMÓW ZWIĄZANYCH ZE SPRZĘTEM ORAZ OPROGRAMOWANIEM
@@ -84,8 +93,8 @@
                   </ul>
               </p>
             </div>
-            <div class="col-lg-12 experience">
-                <h4>06.2015-11.2016 PRACOWNIK BIUROWY-MIX-BUD  SP. Z 0.0 </h4>
+            <div class="col-lg-12">
+                <h5>06.2015-11.2016 PRACOWNIK BIUROWY-MIX-BUD  SP. Z 0.0 </h5>
                  <ul>
                    <li>ORGANIZOWANIE BIURA</li>
                    <li>KONTAKTOWANIE SIE Z KONTRAHENTAMI KLIENTAMI ORAZPRACOWNIKAMI</li>
@@ -94,24 +103,18 @@
                    <li>TWORZENIE KOSZORYSÓW</li>
                  </ul>
             </div>
-            <div class="col-lg-12 experience">
-                <h4>01.2014-05.2014 POMOCNIK STOLARZA - WILDRO     </h4>   
+            <div class="col-lg-12">
+                <h5>01.2014-05.2014 POMOCNIK STOLARZA - WILDRO</h5>   
             </div>
-            <div class="col-lg-12 experience">
-                <h4>09.2012 PRAKTYKI KSIĘGOWOŚĆ-AGENCJA MIESZKANIOWA SP. Z 0.0.</h4>
+            <div class="col-lg-12">
+                <h5>09.2012 PRAKTYKI KSIĘGOWOŚĆ-AGENCJA MIESZKANIOWA SP. Z 0.0.</h5>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="school" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-5 offset-lg-1" id="school-card">
             <h2>WYKSZTAŁCENIE</h2>
             <div class="col-lg-12 experience">
               <p> 
-                <h4>2015 - OBECNIE STUDIA INŻYNIERSKIE: INFORMATYKA</h4>
+                <h5>2015 - OBECNIE STUDIA INŻYNIERSKIE: INFORMATYKA</h5>
                 <p>
                     PAŃSTWOWA WYŻSZA SZKOŁA ZAWODOWA IM. RTM. WITOLDA PILECKIEGO W OŚWIĘCIMIU 
                 </p>
@@ -119,7 +122,7 @@
             </div>
             <div class="col-lg-12 experience">
               <p> 
-                <h4>2010 - 2013 STUDIA LICENCJACKIE: ZARZĄDZANIE</h4>
+                <h5>2010 - 2013 STUDIA LICENCJACKIE: ZARZĄDZANIE FINANSAMI</h5>
                 <p>
                     PAŃSTWOWA WYŻSZA SZKOŁA ZAWODOWA IM. RTM. WITOLDA PILECKIEGO W OŚWIĘCIMIU 
                 </p>
@@ -127,7 +130,7 @@
             </div>
             <div class="col-lg-12 experience">
               <p> 
-                <h4>2007 - 2010 LO KLASA MAT - INF </h4>
+                <h5>2007 - 2010 LO KLASA MAT - INF </h5>
                 <p>
                     POWIATOWY ZESPÓŁ NR 3 STIO W OŚWIĘCIMIU  
                 </p>
@@ -137,14 +140,13 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="section">
-      <div class="container">
+    <section id="skillsAttr" class="section">
+      <div class="container" id="skillsAttr-card">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="col-lg-6">
-              <h2>UMIEJĘTNOŚCI</h2>
+            <div class="col-lg-6 col-md-12" id="skills">
               <ul class="list-group">
-                <li class="list-group-item">JAVA</li>
+                <li class="list-group-item item"><h2>UMIEJĘTNOŚCI</h2></li>
+                <li class="list-group-item item">JAVA</li>
                 <li class="list-group-item">ANDROID</li>
                 <li class="list-group-item">OOP</li>
                 <li class="list-group-item">HTML, CSS, JS </li>
@@ -158,9 +160,9 @@
                 <li class="list-group-item">NORMA-PRO </li>
               </ul>
             </div>
-            <div class="col-lg-6">
-              <h2>ATUTY</h2>
-             <ul class="list-group">
+            <div class="col-lg-5 col-md-12 offset-lg-1" id="skills">
+             <ul class="list-group" >
+              <li class="list-group-item"><h2>ATUTY</h2></li>
               <li class="list-group-item">PRACOWITOŚĆ</li>
               <li class="list-group-item">LOJALNOŚĆ</li>
               <li class="list-group-item">ROZWIĄZYWANIE PROBLEMÓW </li>
@@ -180,7 +182,7 @@
         </div>
         <div class="row">
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>HR system - serwlety
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -189,7 +191,7 @@
           </p>
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>HR system - API
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -198,7 +200,7 @@
           </p>
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>Bit coin app
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -207,7 +209,7 @@
           </p>
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>Frontend - Real Estate
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -216,7 +218,7 @@
           </p>
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>Quote Machine
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -225,7 +227,7 @@
           </p>
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="#"><img class="img-responsive img-circle" src="https://placeholdit.co//i/650x350">
+          <a href="#"><img class="img-fluid img-circle" src="https://placeholdit.co//i/650x350">
           </a>
           <p>Projekt logo
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#project1">
@@ -240,17 +242,49 @@
     </section>
     <section id="contact" class="section"> 
       <div class="container">
-        <div class="row" id="contact-elements">
-          <a href="mailto:jakkoz91@gmail.com"><div class="col-lg-3 col-md-4 contact-element"><i class="fas fa-at ico"></i><br> jakkoz91@gmail.com</div></a>
-          <a href="https://www.linkedin.com/in/jakub-koz"><div class="col-lg-3 col-md-4 col-lg-offset-1 contact-element"><i class="fab fa-linkedin ico"></i><br>www.linkedin.com/in/jakub-koz</div></a>
-          <a href="https://github.com/Qboons"><div class="col-lg-3 col-md-4 col-lg-offset-1 contact-element"><i class="fab fa-github-square ico"></i><br>github.com/Qboons</div></a>
+        <div class="row justify-content-md-center" >
+          <div class="col-lg-12">
+            <h2>KONTAKT</h2>
+          </div>
+         <div class="col-lg-6 " id="contact-elements">
+          <p class="text-left" >
+            Jeśli zainteresowałem Panstwa swoja osobą prosze o kontak :)
+          </p>
+          <p class="text-left">
+            <a href="mailto:jakkoz91@gmail.com"><i class="fas fa-at contact-ico"></i>jakkoz91@gmail.com</a>
+          </p>  
+          <p class="text-left">
+            <a href="https://www.linkedin.com/in/jakub-koz"><i class="fab fa-linkedin contact-ico"></i>www.linkedin.com/in/jakub-koz</a>
+          </p>
+          <p class="text-left">
+            <a href="https://github.com/Qboons"><i class="fab fa-github-square contact-ico"></i>github.com/Qboons</a></p>
+         </div>
+         
         </div>      
       </div>
     </section>
     <footer>
       <div class="container">
-        
-      
+          <div class="row" >
+            <div class="col-lg-4">
+               
+            </div>
+            <div class="col-lg-4" >
+            </div>
+            <div class="col-lg-4" id="footer-contact">
+                <p class="text-right">Kontak:
+                    <a href="mailto:jakkoz91@gmail.com"><i class="fas fa-at footer-ico"></i></a>  
+                    <a href="https://www.linkedin.com/in/jakub-koz"><i class="fab fa-linkedin footer-ico"></i></a>    
+                    <a href="https://github.com/Qboons"><i class="fab fa-github-square footer-ico"></i></a>
+                 </p>
+            </div>
+            
+        </div> 
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">&copy; 2018 JK</p>
+            </div>
+          </div>     
       </div>
     </footer>
 <!-- Modal -->
