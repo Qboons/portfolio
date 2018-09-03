@@ -127,7 +127,7 @@ a.nav-link:hover{
     padding: 10% 10px 0px;
 }
 .section:nth-child(even){
-    background-image: url("/img/bg_img.jpg");
+    background-image: url("../img/bg_img.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
