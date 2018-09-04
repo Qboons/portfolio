@@ -6,14 +6,15 @@ body {
 }
 .jumbotron { 
     height: 1000px;
-    background: url("../img/jumbo-img.jpg");
+    background: url("../img/comp.jpg");
     background-position: center;
     background-size:cover;
     margin-bottom: 0;
   }
 .jumbo-caption{
     font-weight: 900;
-    background:rgb(0,0,0,0.05);
+    background:rgb(0,0,0,0.01);
+    text-shadow:2px 2px 2px #FAFAFA;
     width: fit-content;
     color: #212121;
 }
@@ -49,33 +50,30 @@ a.nav-link:hover{
 #img-header {
     border:none;
     margin-bottom: 10px;
-
+    height: fit-content;
 }
 #img-self {
     
     border:none;
     margin-bottom: 10px;
     border-radius: 3px;
-    position: relative;
+    /* position: relative; */
 }
-.caption{
-    color: #ffffff;
-    font-weight: 200;
+.carousel-caption{
+    color: #009688;
+    font-weight: 900;
     font-size: 18px;
-    position: absolute;
-    left: 6%;
-    top: 40%;
-    width: 88%;
-
+    /* text-shadow: 1px 1px 1px #ffffff; */
 }
-.caption p{
-    background:rgb(33, 33, 33,0.1);
-    width:fit-content;
+.carousel-caption p{
+    background:rgb(33, 33, 33,0.7);
+    /* width:fit-content; */
+ 
 }
 
 #aboutMe{
    
-
+padding: 120px;
 }
 #about-card{
     color: #009688;
@@ -86,6 +84,9 @@ a.nav-link:hover{
     /* background:#607D8B; */
 }
 #about-card p {
+}
+#work{
+    padding-top:120px; 
 }
 #experience-card {
    padding: 25px 10px 25px 20px;
@@ -101,7 +102,7 @@ a.nav-link:hover{
    height: fit-content;
 }
 #skillsAttr{
-    
+    padding-top:120px; 
     margin-bottom: 0px;
 }
 #skillsAttr-card{
@@ -118,6 +119,12 @@ a.nav-link:hover{
 .list-group-item{
     background: none;
     border: none;
+}
+#projects{
+    padding-top:120px;
+}
+#projects .col-sm-6 p{
+    line-height: 50px;
 }
 
 .section{
@@ -140,6 +147,7 @@ a.nav-link:hover{
 }
 
 #contact{
+    padding-top:120px; 
     text-align: center;
     font-size: 20px;
     color:#009688;
@@ -157,19 +165,14 @@ a.nav-link:hover{
 a:link,a:visited{
     color:#009688;;
 }
-
-#contact-element:hover {
-   color:black;
-    
+#img-code{
+    width:fit-content;
 }
-
 
 #home{
    font-size: 18px;
 }
-#projects .col-sm-6 p{
-    line-height: 50px;
-}
+
 li :hover {
     border-bottom: 2px solid rgb(91, 138, 82);
     
