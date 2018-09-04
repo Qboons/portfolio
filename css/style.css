@@ -1,5 +1,6 @@
 
 body {
+    padding-right: 0 !important;
     font-family: 'Montserrat', sans-serif;
     color: #009688;
     
@@ -36,16 +37,6 @@ a.nav-link:hover{
     border-bottom: 2px solid #009688;
 }
 
-/* .navbar-default .navbar-nav>li>a{
-    color: #009688;
-}
-.navbar-default .navbar-nav>li>a:hover{
-    color:#009688;
-    border-bottom-color:#BDBDBD;
-}
-.navbar-default .navbar-brand {
-    color:#009688;
-} */
 
 #img-header {
     border:none;
@@ -57,7 +48,7 @@ a.nav-link:hover{
     border:none;
     margin-bottom: 10px;
     border-radius: 3px;
-    /* position: relative; */
+  
 }
 .carousel-caption{
     color: #009688;
@@ -68,11 +59,14 @@ a.nav-link:hover{
 .carousel-caption p{
     background:rgb(33, 33, 33,0.7);
     /* width:fit-content; */
+}
+.carousel-caption p:hover{
+    background:rgb(33, 33, 33);
+    /* width:fit-content; */
  
 }
 
 #aboutMe{
-   
 padding-top: 120px;
 }
 #about-card{
@@ -125,6 +119,22 @@ padding-top: 120px;
 }
 #projects .col-sm-6 p{
     line-height: 50px;
+}
+.project{
+    padding: 0 7px 14px 7px ;
+
+}
+.img-project{
+    height: 250px;
+}
+
+.btn {
+    border:none;
+    background: rgb(33, 33, 33);
+}
+.btn:hover{
+    color: rgb(255, 255, 255,0.8);
+    background: rgb(33, 33, 33,0.9);
 }
 
 .section{
