@@ -52,7 +52,7 @@
     <section id="aboutMe" class="section">
       <div class="container">       
           <div class="row " id="about-card">
-              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 " id="img-header">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 " id="img-header">
                   <img class="img-fluid" id="img-self" src="img/self.jpg" alt="">
                   <div class="carousel-caption">
                     <p >IMIE: JAKUB</p>
@@ -67,7 +67,6 @@
                   <p>
                     JESTEM OSOBĄ DĄŻĄCĄ DO NIEUSTANNEGO POSZERZANIA SWOJEJ WIEDZY, DLATEGO NIE ZAMYKAM SIĘ NA ŻADNE TECHNOLOGIE I STANOWISKA, CO W OBSZARZE SZYBKO ZMIENIAJĄCYCH SIĘ NARZĘDZI INFORMATYCZNYCH I BARDZO KONKURENCYJNEGO OTOCZENIA BIZNESOWEGO MA DUŻE ZNACZENIE. PONADTO DOBRZE ODNAJDUJĘ SIĘ W ZESPOLE I LUBIĘ PRACE NAD ZŁOŻONYMI PROJEKTAMI.
                   </p>
-                  <!-- <p><a href="#aboutMe" class="btn btn-primary">See More <i class="fa fa-check" aria-hidden="true"></i> </a></p>       -->
                 </div>
           </div>
       </div>
@@ -150,10 +149,11 @@
                 <li class="list-group-item">ANDROID</li>
                 <li class="list-group-item">OOP</li>
                 <li class="list-group-item">HTML, CSS, JS </li>
-                <li class="list-group-item">RELACYJNE BAZY DANYCH </li>
+                <li class="list-group-item">INTELLIJ</li>
+                <li class="list-group-item">RELACYJNE BAZY DANYCH</li>
                 <li class="list-group-item">NAPRAWA KOMPUTERÓW </li>
                 <li class="list-group-item">AUTOCAD</li>
-                <li class="list-group-item">PHOTOSHOP I GIMP </li>
+                <li class="list-group-item">PHOTOSHOP I GIMP</li>
                 <li class="list-group-item">MS OFFICE</li>
                 <li class="list-group-item">KURS KADRY-PŁACE</li>
                 <li class="list-group-item">FAKTURA-NT</li>
@@ -175,12 +175,12 @@
     </section>
     <section id="projects" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row ">
+          <div class="col-lg-12 text-center">
             <h2>PROJEKTY</h2>
           </div>
         </div>
-        <div class="row equal">
+        <div class="row equal" id="projects-card">
           <div class="col-sm-6 col-md-6 col-lg-4 project" >
             <img class="img-fluid img-project" src="img/hrs-s.jpg">
               <div class="carousel-caption">
@@ -255,10 +255,10 @@
             <a href="mailto:jakkoz91@gmail.com"><i class="fas fa-at contact-ico"></i> jakkoz91@gmail.com</a>
           </p>  
           <p class="text-left">
-            <a href="https://www.linkedin.com/in/jakub-koz"><i class="fab fa-linkedin contact-ico"></i> linkedin.com/in/jakub-koz</a>
+            <a href="https://www.linkedin.com/in/jakub-koz" target="_blank"><i class="fab fa-linkedin contact-ico"></i> linkedin.com/in/jakub-koz</a>
           </p>
           <p class="text-left">
-            <a href="https://github.com/Qboons"><i class="fab fa-github-square contact-ico"></i> github.com/Qboons</a></p>
+            <a href="https://github.com/Qboons" target="_blank"><i class="fab fa-github-square contact-ico"></i> github.com/Qboons</a></p>
          </div>
          <div class="col-lg-6" id="img-code">
             <img src="img/end.jpg" class="img-fluid" alt="">
@@ -274,8 +274,8 @@
             <div class="col-lg-4" id="footer-contact">
                 <p class="text-right">
                     <a href="mailto:jakkoz91@gmail.com"><i class="fas fa-at footer-ico"></i></a>  
-                    <a href="https://www.linkedin.com/in/jakub-koz"><i class="fab fa-linkedin footer-ico"></i></a>    
-                    <a href="https://github.com/Qboons"><i class="fab fa-github-square footer-ico"></i></a>
+                    <a href="https://www.linkedin.com/in/jakub-koz" target="_blank"><i class="fab fa-linkedin footer-ico"></i></a>    
+                    <a href="https://github.com/Qboons" target="_blank"><i class="fab fa-github-square footer-ico"></i></a>
                  </p>
             </div>
             
@@ -295,7 +295,7 @@
           <div class="modal-body">
             <p>PROJEKT SYSTEMU ZARZĄDZANIA ZASOBAMI LUDZKIMI</p>
             <p>UŻYTE TECHNOLOGIE: JAVA/JEE, HTML, CSS, PHP, SQLITE</p>
-            <p><a href="https://github.com/Qboons/hrs-servlet"><i class="fas fa-code"></i> https://github.com/Qboons/hrs-servlet</a></p>
+            <p><a href="https://github.com/Qboons/hrs-servlet" target="_blank"><i class="fas fa-code"></i> https://github.com/Qboons/hrs-servlet</a></p>
 
           </div>
           <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times"></i></button></div>
@@ -309,7 +309,7 @@
           <div class="modal-body">
             <p>API SYSTEMU ZARZĄDZANIA ZASOBAMI LUDZKIMI</p>
             <p>UŻYTE TECHNOLOGIE: JAVA, SPRING, HIBERNATE</p>
-            <p><a href="https://github.com/Qboons/HRS-Api-Spring"><i class="fas fa-code"></i> https://github.com/Qboons/HRS-Api-Spring</a></p>
+            <p><a href="https://github.com/Qboons/HRS-Api-Spring" target="_blank"><i class="fas fa-code"></i> https://github.com/Qboons/HRS-Api-Spring</a></p>
            
           </div>
           <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times"></i></button></div>
@@ -321,11 +321,16 @@
         <div class="modal-content">
           <div class="modal-header">CRYPTOCURRENCY APP (JAVA/ANDROID)</div>
           <div class="modal-body">
-            <p>APLIKACJA LISTUJĄCA ORAZ PRZELICZAJĄCA WYBRANE KRYPROWALUTY Z MOŻLIWOŚCIĄ ZAPISU DO PORTFELA</p>
-            <p>UŻYTE TECHNOLOGIE: JAVA, ANDROID</p>
-            <p><a href="https://github.com/Qboons/CryptoCurrencyPriceApp"><i class="fas fa-code"></i> https://github.com/Qboons/CryptoCurrencyPriceApp</a></p>
-            
-          </div>
+            <div class="ro">
+              <div class="col-lg-12">
+                  <p>APLIKACJA LISTUJĄCA ORAZ PRZELICZAJĄCA WYBRANE KRYPROWALUTY Z MOŻLIWOŚCIĄ ZAPISU DO PORTFELA</p>
+                  <p>UŻYTE TECHNOLOGIE: JAVA, ANDROID</p>
+                  <p><a href="https://github.com/Qboons/CryptoCurrencyPriceApp" target="_blank"><i class="fas fa-code"></i> github.com/
+                    Qboons/CryptoCurrencyPriceApp</a></p>
+                  
+                </div>
+              </div>
+            </div>
           <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times"></i></button></div>
         </div>
       </div>
@@ -337,8 +342,8 @@
           <div class="modal-body">
             <p>FRONTEND APLIKACJI AGENCJI NIERUCHOMOŚĆI</p>
             <p>UŻYTE TECHNOLOGIE: JAVASCRIPT, HTML, CSS, REACT, REDUX</p>
-            <p><a href="https://github.com/Qboons/rea"><i class="fas fa-code"></i> https://github.com/Qboons/rea</a></p>
-            <p><a href="https://qboons.github.io/rea/"><i class="fab fa-chrome"></i> https://qboons.github.io/rea/</a></p>
+            <p><a href="https://github.com/Qboons/rea" target="_blank"><i class="fas fa-code"></i> https://github.com/Qboons/rea</a></p>
+            <p><a href="https://qboons.github.io/rea/" target="_blank"><i class="fab fa-chrome"></i> https://qboons.github.io/rea/</a></p>
           </div>
           <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times"></i></button></div>
         </div>
@@ -351,8 +356,8 @@
           <div class="modal-body">
             <p>PROSTA APLIKACJA WYŚWIETLAJĄCA LOSOWE CYTATY</p>
             <p>UŻYTE TECHNOLOGIE: JAVASCRIPT, HTML, CSS</p>
-            <p><a href="https://github.com/Qboons/quote"><i class="fas fa-code"></i> https://github.com/Qboons/quote</a></p>
-            <p><a href="https://qboons.github.io/quote/"><i class="fab fa-chrome"></i> https://qboons.github.io/quote/</a></p>
+            <p><a href="https://github.com/Qboons/quote" target="_blank"><i class="fas fa-code"></i> https://github.com/Qboons/quote</a></p>
+            <p><a href="https://qboons.github.io/quote/" target="_blank"><i class="fab fa-chrome"></i> https://qboons.github.io/quote/</a></p>
           </div>
 
           <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times"></i></button></div>
